@@ -4,13 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        int W, H, X, Y, R, S;
-        W = int.Parse(Console.ReadLine());
-        H = int.Parse(Console.ReadLine());
-        X = int.Parse(Console.ReadLine());
-        Y = int.Parse(Console.ReadLine());
-        R = int.Parse(Console.ReadLine());
-        S = int.Parse(Console.ReadLine());
+        string[] entrada = Console.ReadLine().Split(' ');
+        int W = int.Parse(entrada[0]);
+        int H = int.Parse(entrada[1]);
+        int X = int.Parse(entrada[2]);
+        int Y = int.Parse(entrada[3]);
+        int R = int.Parse(entrada[4]);
+        int S = int.Parse(entrada[5]);
 
         int finalX = (X + R) % W;
         int finalY = (Y + S) % H;
